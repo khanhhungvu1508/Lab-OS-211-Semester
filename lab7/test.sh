@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "Reading input file:"
+printf "Reading input file:\n"
 cat input.txt
-echo "Results scheduling:"
+printf "\nResults scheduling:\n"
 gcc sched.c queue.c -o sched -lpthread
 cat input.txt | ./sched
