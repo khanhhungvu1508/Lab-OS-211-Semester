@@ -10,7 +10,7 @@
 int count[MAX_THREADS];
 int main(int argc, char **argv){
 int i, chunk;
-f loat a[N], b[N], c[N];
+float a[N], b[N], c[N];
 
 /* Some initializations */
 for(i = 0; i < N; i++){
