@@ -29,31 +29,31 @@ void *PrintHello(void *threadarg)
 
 int main(int argc, char *argv[])
 {
-pthread_t threads[NUM_THREADS];
-int *taskids[NUM_THREADS];
-int rc, t, sum;
+   pthread_t threads[NUM_THREADS];
+   int *taskids[NUM_THREADS];
+   int rc, t, sum;
 
-sum=0;
-messages[0] = "Add to 0";
-messages[1] = "Add to 1";
-messages[2] = "Add to 2";
-messages[3] = "Add to 3";
-messages[4] = "Add to 4"; 
-messages[5] = "Add to 5";
-messages[6] = "Add to 6";
-messages[7] = "Add to 7";
+   sum=0;
+   messages[0] = "Add to 0";
+   messages[1] = "Add to 1";
+   messages[2] = "Add to 2";
+   messages[3] = "Add to 3";
+   messages[4] = "Add to 4"; 
+   messages[5] = "Add to 5";
+   messages[6] = "Add to 6";
+   messages[7] = "Add to 7";
 
-for(t=0;t<NUM_THREADS;t++) {
-  sum = sum + t;
-  thread_data_array[t].thread_id = t;
-  thread_data_array[t].sum = sum;
-  thread_data_array[t].message = messages[t];
-  printf("Creating thread %d\n", t);
-  rc = pthread_create(&threads[t], NULL, PrintHello, (void *) &thread_data_array[t]);
-  if (rc) {
-    printf("ERROR; return code from pthread_create() is %d\n", rc);
-    exit(-1);
-    }
-  }
-  pthread_exit(NULL);
+   for(t=0;t<NUM_THREADS;t++) {
+     sum = sum + t;
+     thread_data_array[t].thread_id = t;
+     thread_data_array[t].sum = sum;
+     thread_data_array[t].message = messages[t];
+     printf("Creating thread %d\n", t);
+     rc = pthread_create(&threads[t], NULL, PrintHello, (void *) &thread_data_array[t]);
+     if (rc) {
+       printf("ERROR; return code from pthread_create() is %d\n", rc);
+       exit(-1);
+     }
+   }
+   pthread_exit(NULL);
 }
