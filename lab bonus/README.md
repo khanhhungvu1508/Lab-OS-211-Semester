@@ -1,4 +1,4 @@
-# Lab 10 OS: File System
+# Lab 10+1=11 OS: Multithread Programing with OpenMP
 
 ## Reference
 
