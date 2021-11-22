@@ -1,8 +1,11 @@
+#include <pthread.h>
+#include <stdio.h>
+
 char *messages[NUM_THREADS];
 
 struct thread_data
 {
-   int	thread_id;
+   int  thread_id;
    int  sum;
    char *message;
 };
