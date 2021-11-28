@@ -1,0 +1,16 @@
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Thread 0: Add to 0  Sum=0
+Thread 2: Add to 2  Sum=3
+Thread 3: Add to 3  Sum=6
+Thread 4: Add to 4  Sum=10
+Thread 7: Add to 7  Sum=28
+Thread 1: Add to 1  Sum=1
+Thread 5: Add to 5  Sum=15
+Thread 6: Add to 6  Sum=21

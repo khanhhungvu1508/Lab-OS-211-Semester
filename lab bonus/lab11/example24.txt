@@ -1,0 +1,13 @@
+1st Parallel Region:
+Thread 1: a, b, x = 1, 1, 2.100000
+Thread 0: a, b, x = 0, 0, 1.000000
+Thread 2: a, b, x = 2, 2, 3.200000
+Thread 3: a, b, x = 3, 3, 4.300000
+************************************
+Master thread doing serial work here
+************************************
+2nd Parallel Region:
+Thread 1: a, b, x = 1, 0, 2.100000
+Thread 0: a, b, x = 0, 0, 1.000000
+Thread 2: a, b, x = 2, 0, 3.200000
+Thread 3: a, b, x = 3, 0, 4.300000

@@ -1,0 +1,17 @@
+thread: 0 starting. start=0 end=99999
+thread: 1 starting. start=100000 end=199999
+thread: 7 starting. start=700000 end=799999
+thread: 6 starting. start=600000 end=699999
+thread: 3 starting. start=300000 end=399999
+thread: 4 starting. start=400000 end=499999
+thread: 5 starting. start=500000 end=599999
+thread: 2 starting. start=200000 end=299999
+thread: 3 done. Global sum now is=201575
+thread: 6 done. Global sum now is=309540
+thread: 0 done. Global sum now is=460550
+thread: 5 done. Global sum now is=618734
+thread: 7 done. Global sum now is=637300
+thread: 4 done. Global sum now is=701602
+thread: 1 done. Global sum now is=726085
+thread: 2 done. Global sum now is=800000
+Final Global Sum=800000
